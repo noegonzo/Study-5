@@ -1,9 +1,9 @@
 const int LED = 13; 
 const int BUTTON = 7; 
-int val = 0; // val will be used to store the state // of the input pin
+int val = 0; 
 int state = 0; // 0 = LED off while 1 = LED on
 void setup() {
-pinMode(LED, OUTPUT); // tell Arduino LED is an output pinMode(BUTTON, INPUT); // and BUTTON is an input
+pinMode(LED, OUTPUT); // tell Arduino LED is an output pinMode(BUTTON, INPUT)
 }
 void loop() {
 val = digitalRead(BUTTON); 
